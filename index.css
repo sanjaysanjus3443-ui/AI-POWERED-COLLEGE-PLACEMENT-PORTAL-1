@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', 'Inter', sans-serif;
+  
+  --color-brand-navy-50: #f8fafc;
+  --color-brand-navy-100: #e2e8f0;
+  --color-brand-navy-600: #0a2647;
+  --color-brand-navy-700: #001f3f;
+  --color-brand-navy-800: #0a1f3d;
+  --color-brand-navy-900: #001730;
+  --color-brand-navy-950: #000c1a;
+  
+  --color-brand-gold-50: #faf6ee;
+  --color-brand-gold-100: #f4eae0;
+  --color-brand-gold-400: #d6b475;
+  --color-brand-gold-500: #c5a059;
+  --color-brand-gold-600: #ae8b47;
+  --color-brand-gold-700: #8a6a31;
+  
+  --shadow-premium: 0 4px 20px -2px rgba(0, 31, 63, 0.05), 0 2px 8px -1px rgba(0, 31, 63, 0.03);
+  --shadow-gold-glow: 0 0 15px rgba(197, 160, 89, 0.15);
+}
+
+/* Custom visual utilities */
+body {
+  background-color: #f8fafc;
+  font-family: var(--font-sans);
+}
+
+/* Elegant scroll bars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-navy-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-navy-100);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gold-500);
+}
+
+/* Elegant card enhancements */
+.card-polished {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card-polished-gold-top {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--color-brand-gold-500);
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.bg-mesh {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(0, 31, 63, 0.02) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(197, 160, 89, 0.04) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(0, 31, 63, 0.015) 0px, transparent 50%);
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, var(--color-brand-gold-400) 0%, var(--color-brand-gold-600) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-navy {
+  background: linear-gradient(135deg, var(--color-brand-navy-700) 0%, var(--color-brand-navy-900) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

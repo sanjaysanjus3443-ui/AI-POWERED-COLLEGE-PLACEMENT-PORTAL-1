@@ -1,0 +1,6 @@
+{
+  "name": "College Placement Portal",
+  "description": "Full-stack College Placement Portal for managing campus recruitment, student applications, company drives, and admin operations with server-side AI resume parsing, job recommendations, mockup interview question generator, and placement prediction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

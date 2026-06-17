@@ -1,2 +1,20 @@
-# AI-POWERED-COLLEGE-PLACEMENT-PORTAL-1
-An intelligent, end-to-end college placement management system driven by AI to streamline hiring for students, recruiters, and training &amp; placement officers (TPOs)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/873e27c5-7a1b-4bad-b8be-5abf39c6c40f
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
